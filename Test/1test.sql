@@ -1,4 +1,3 @@
-DELIMITER $$
 
 call cargar_empleado(90);
 
@@ -48,5 +47,3 @@ call AjusteHorasCargadas(6, 3, 8, 7, 9);
 
 select *
 from liquidaciones;
-
-$$
