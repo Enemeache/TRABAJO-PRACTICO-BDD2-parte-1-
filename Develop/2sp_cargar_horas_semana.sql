@@ -3,17 +3,6 @@ begin
 	
 	set @cont = 0;
 	set @target = 6;
-	set @suma_horas = 0;
-		
-	select sum(hor_horas_dia) into @suma_horas
-	from hora
-	where emp_legajo = emp_id and month(hor_fecha) = mes;
-    
-    if isnull(@suma_horas) then
-		set @suma_horas = 0;
-	end if;
-	
-    if @sum_horas <= 310 then
     
 		while @cont <= @target do
 			
@@ -30,7 +19,5 @@ begin
 			end if;
             
 		end while;
-        
-	end if;
     
 end;
